@@ -4,7 +4,7 @@ WORKDIR /work
 COPY cpp /root/.config/atcoder-cli-nodejs/cpp
 COPY ssh /root/.ssh
 COPY ac-library /ac-library
-COPY src /work
+COPY work /work
 RUN apt update && apt upgrade -y && apt install -y tzdata && \
     apt install -y \
     git \
